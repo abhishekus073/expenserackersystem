@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    tools:context=".SignUpActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="357dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Expense Tracker System"
+        android:textColor="#C488EA"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="460dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/edit_text_border"
+        android:gravity="center"
+        android:hint="user_name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="460dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/edit_text_border"
+        android:textColorHint="@color/white"
+        android:layout_height="70dp"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="50dp"
+        android:hint="password"
+        android:password="true" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="451dp"
+        android:gravity="center"
+        android:layout_height="76dp"
+        android:background="@drawable/edit_text_border"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="50dp"
+        android:hint="retype_password"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="171dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/repassword"
+        android:layout_marginTop="89dp"
+        android:background="@drawable/custom_button3"
+        android:text="register" />
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="191dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/btnsignup"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="-59dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/custom_button3"
+        android:text="existing user !" />
+
+
+</RelativeLayout>
